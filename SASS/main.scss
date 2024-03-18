@@ -12,6 +12,11 @@
 @import 'pages/_home';
 
 //layout
-@import 'layout/header';
+@import 'layout/_header';
+
+//components
+@import 'components/_button';
+@import 'components/_nav';
+@import 'components/cards';
 
 
