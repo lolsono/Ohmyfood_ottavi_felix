@@ -1,0 +1,26 @@
+footer {
+    padding-bottom: $space_after_pages;
+    display: flex;
+    flex-direction: column;
+    padding-left: $space_side_pages;
+    padding-right: $space_side_pages;
+    background-color: $text_color;
+
+    p {
+        font-size: 20px;
+        color: $white;
+        font-family: "Shrikhand", serif;
+        margin-block-end: 00px;
+    }
+
+    a {
+        padding-top: 10px;
+        align-items: center;
+        text-decoration: none;
+        color: $white;
+
+        i {
+            padding-right: 10px;
+        }
+    }
+}

@@ -80,7 +80,7 @@ h1, i {
   font-style: italic;
 }
 
-p, h2, button {
+p, h2, button, a {
   font-family: "Roboto", sans-serif;
 }
 
@@ -150,6 +150,30 @@ header {
 
 header img {
   width: 45%;
+}
+
+footer {
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #353535;
+}
+footer p {
+  font-size: 20px;
+  color: white;
+  font-family: "Shrikhand", serif;
+  margin-block-end: 0px;
+}
+footer a {
+  padding-top: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+footer a i {
+  padding-right: 10px;
 }
 
 .button_purpel {
