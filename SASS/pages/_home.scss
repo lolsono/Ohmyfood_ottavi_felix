@@ -46,6 +46,14 @@ button:hover {
 nav {
 
     display: flex;
-    justify-content: center
+    justify-content: center;
+    padding-bottom: 40px;
 
+}
+
+.section_cards {
+    padding-top: $space_after_pages;
+    padding-left: $space_side_pages;
+    padding-right: $space_side_pages;
+    background-color: $background_info;
 }
