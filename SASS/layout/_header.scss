@@ -2,14 +2,46 @@ body {
     margin: 0px;
 }
 
+.hearder_restaurant {
+    display: flex;
+    height: 63px;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        padding-left: 15%;
+        width: 45%;
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    //gestion retour acceuil 
+    //seulement pour les pages restaurant
+    a {
+        text-decoration: none;
+        color: $text_color;
+        padding-left: 5%;
+        a:active {
+            color: inherit;
+        }
+    }
+
+}
+
 header {
+
     display: flex;
     height: 63px;
     align-content: center;
     justify-content: center;
     align-items: center;
+   
 }
 
 header img {
     width: 45%;
+    max-width: 80%;
+    max-height: 80%;
 }
+
