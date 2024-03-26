@@ -17,19 +17,28 @@
         padding-left: $space_side_pages;
         padding-right: $space_side_pages;
 
-        h2 {
-            i {
-                padding-left: 50px;
-                font-weight: lighter;
-            }
+    }
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            margin-right: 30px;
+            font-size: 21px;
         }
 
+        h2 {
+            font-family: "Shrikhand", serif;
+        }
     }
 
-    h2 {
-        font-family: "Shrikhand", serif;
+    .button_center_page {
+        display: flex;
+        justify-content: center;
     }
-
     
     // gestion cards menu restaurant
 
@@ -56,13 +65,14 @@
             border-radius: 20px;
             background-color: #F6F6F6;
             box-shadow: 0px 5px 10px 1px;
+            justify-content: center;
         
             .card_menu_titre {
                 font-weight: bold;
                 height: 10px;
                 padding: 0px;
             }
-        
+
             p {
                 font-weight: lighter;
                 margin-left: 30px;
@@ -76,8 +86,22 @@
                 text-transform: none;
 
             }
+        
+            .card_menu_price {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .price {
+                    width: 10%;
+                    color: red;
+                }
+
+            }
         }    
     }
-    
 }
+
+
 
