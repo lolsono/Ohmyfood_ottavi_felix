@@ -3,7 +3,7 @@ body {
 }
 
 header {
-
+    position: relative;
     display: flex;
     height: 63px;
     align-content: center;
@@ -11,6 +11,9 @@ header {
     align-items: center;
 
     h1 {
+        position: relative;
+        z-index: 1;
+
         margin-block-start: 0px;
         margin-block-end: 0px;
         width: 162px;
@@ -21,23 +24,17 @@ header {
             height: 30px;
         }
     }
+
+    a {
+        left: $space_side_pages;
+        position: absolute;
+        z-index: 2;
+        text-decoration: none;
+        color: $secondary_text_color;
+    }
    
 }
 
-.hearder_restaurant {
-
-    //gestion retour acceuil 
-    //seulement pour les pages restaurant
-    a {
-        text-decoration: none;
-        color: $text_color;
-        padding-left: 5%;
-        a:active {
-            color: inherit;
-        }
-    }
-
-}
 
 
 

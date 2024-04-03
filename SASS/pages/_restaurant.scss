@@ -63,14 +63,21 @@
             align-items: center;
             border: none;
             border-radius: 20px;
-            background-color: #F6F6F6;
+            background-color: $background_info;
             box-shadow: 0px 5px 10px 1px;
             justify-content: center;
         
             .card_menu_titre {
                 font-weight: bold;
-                height: 10px;
                 padding: 0px;
+
+                /*gestion elipse*/
+                white-space: nowrap; 
+                overflow: hidden; 
+                text-overflow: ellipsis; 
+                height: 30%;
+                margin-top: 0px;
+                margin-bottom: 0px;
             }
 
             p {
@@ -89,13 +96,22 @@
         
             .card_menu_price {
 
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
                 .price {
-                    width: 10%;
-                    color: red;
+                    text-align: center;
+                    margin: 0px;
+                    font-weight: bold;
+                    width: 21%;
+                    color: $primary_text_color;
+                }
+                
+                .title_price {
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    height: 100%;
+                    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+                    overflow: hidden; /* Cache le texte qui dépasse */
+                    text-overflow: ellipsis; /* Ajoute une ellipse à la fin du texte coupé */
+                    margin-left: 15px;
                 }
 
             }
