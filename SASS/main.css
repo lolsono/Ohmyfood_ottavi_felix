@@ -142,6 +142,23 @@ nav {
   background-color: #F6F6F6;
 }
 
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 1024px) {
+  .section_info {
+    padding-bottom: 3%;
+    background-color: #F6F6F6;
+  }
+  .section_info h2 {
+    font-size: 40px;
+    margin-block-start: 3%;
+  }
+  .section_info .p_info {
+    color: #353535;
+    font-size: 18px;
+    margin-block-start: 9px;
+    margin-block-end: 2%;
+  }
+}
 .main_menu img {
   width: 100%;
   height: 275px;
@@ -172,6 +189,7 @@ nav {
   font-family: "Shrikhand", serif;
 }
 .main_menu .button_center_page {
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
 }
@@ -294,6 +312,10 @@ footer a i {
   padding-right: 10px;
 }
 
+.footer_restaurant {
+  margin-top: -50px;
+}
+
 .button_purpel {
   height: 50px;
   width: 50%;
@@ -309,6 +331,12 @@ footer a i {
   align-items: center;
 }
 
+/* desktop devices (1024px) */
+@media (min-width: 1024px) {
+  .button_purpel {
+    width: 218px;
+  }
+}
 nav {
   display: flex;
   flex-direction: column;

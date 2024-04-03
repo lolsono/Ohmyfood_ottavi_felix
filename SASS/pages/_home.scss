@@ -63,3 +63,25 @@ nav {
     padding-right: $space_side_pages;
     background-color: $background_info;
 }
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 1024px) {
+
+    .section_info {
+        padding-bottom: 3%;
+        background-color: $background_info;
+
+        h2 {
+            font-size: 40px;
+            margin-block-start: 3%;
+        }
+
+        .p_info {
+            color: $primary_text_color;
+            font-size: 18px;
+            margin-block-start: 9px;
+            margin-block-end: 2%;
+        }
+    }
+
+}
