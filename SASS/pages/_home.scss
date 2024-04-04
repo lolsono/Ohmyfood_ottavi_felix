@@ -9,7 +9,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: $center_text;
-    background-color: $background_info;
+    background-color: $secondary_background;
     padding-bottom: $space_after_pages;
 
     .div_info {
@@ -19,7 +19,7 @@ button:hover {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: $background_info_div;
+        background-color: $primary_background;
         box-shadow: inset 0px 4px 3px 0px $shadow;
         color: $secondary_text_color;      
         margin: 0px; 
@@ -61,15 +61,85 @@ nav {
     padding-top: $space_after_pages;
     padding-left: $space_side_pages;
     padding-right: $space_side_pages;
-    background-color: $background_info;
+    background-color: $secondary_background;
 }
+
+// partie explication fonctionement du site 
+
+.section_fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding-left: $space_side_pages;
+    padding-right: $space_side_pages;
+
+    //gestion alignement telephone barre fonctionement
+    ol {
+        padding-left: 0px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+
+            //gestion du rond autour du chiffre
+            p {
+                color: $white;
+                position: relative;
+                left: 13px;
+                border: none;
+                width: 30px;
+                height: 26px;
+                border-radius: 50%; 
+                background-color: $primary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            figure {
+                margin-left: 0px;
+                    margin-right: 25px;
+                height: 72px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border: none;
+                border-radius: 20px;
+                background-color: $secondary_background;
+                justify-content: center;
+                
+                box-shadow: 0px 3px 6px 0.4px $shadow;
+    
+                i {
+                    margin-right: 30px;
+                    color: $primary_text_color;
+                }
+
+                figcaption {
+                    font-size: 16px;
+                    font-family: "Roboto", sans-serif;
+                }
+        
+            }
+
+        }
+
+    }
+}    
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 1024px) {
 
     .section_info {
         padding-bottom: 3%;
-        background-color: $background_info;
+        background-color: $secondary_background;
 
         h2 {
             font-size: 40px;
@@ -82,6 +152,31 @@ nav {
             margin-block-start: 9px;
             margin-block-end: 2%;
         }
+    }
+
+
+    .section_fonctionnement{
+        padding-left: 70px;
+        padding-right: 70px;
+
+        //gestion alignement desktop barre fonctionement
+        ol {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            li {
+                width: 35%;
+
+                figure {
+                    margin-left: 0px;
+                    margin-right: 25px;
+                }
+            }
+        }
+
     }
 
 }
