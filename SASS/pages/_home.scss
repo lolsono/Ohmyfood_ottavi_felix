@@ -102,6 +102,13 @@ nav {
                 align-items: center;
             }
 
+            .figure_color {
+                
+                i {
+                    color: $primary;
+                }
+            }
+
             figure {
                 margin-left: 0px;
                     margin-right: 25px;
@@ -156,8 +163,8 @@ nav {
 
 
     .section_fonctionnement{
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: $space_side_desktop;
+        padding-right: $space_side_desktop;
 
         //gestion alignement desktop barre fonctionement
         ol {

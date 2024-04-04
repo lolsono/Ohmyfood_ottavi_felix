@@ -7,6 +7,9 @@
     }
 
     .section_menu {
+
+        //pour supprimer le blanc en bas
+        margin-bottom: -50px;
         padding-top: 50px;
         position: relative;
         top: -50px;
@@ -119,6 +122,26 @@
             }
         }    
     }
+}
+
+/* desktop devices (1024px) */
+@media (min-width: 1024px) {
+
+    // partie footer de la home page 
+    .main_menu {
+
+        .section_menu{
+            //effet de decallage de l'exterieur
+            margin-left: $space_side_desktop;
+            margin-right: $space_side_desktop;
+
+            //effet de decallage de l'interieur
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+
+    }
+
 }
 
 

@@ -92,8 +92,8 @@
     .section_cards  {
         padding-top: 4%;
         padding-bottom: 2%;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: $space_side_desktop;
+        padding-right: $space_side_desktop;
 
         .organiz_cards_reponsive {
             display: flex;
