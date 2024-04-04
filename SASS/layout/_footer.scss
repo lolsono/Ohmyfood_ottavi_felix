@@ -6,25 +6,82 @@ footer {
     padding-right: $space_side_pages;
     background-color: $primary_text_color;
 
-    p {
-        font-size: 20px;
-        color: $white;
-        font-family: "Shrikhand", serif;
-        margin-block-end: 00px;
-    }
+    ul {
+        padding: 0px;
 
-    a {
-        padding-top: 10px;
-        align-items: center;
-        text-decoration: none;
-        color: $white;
+        //gestion ordre du titre fin de liste
+        .footer_title {
+            margin-bottom: 20px;
+        }
 
-        i {
-            padding-right: 10px;
+        h2 {
+            font-size: 20px;
+            color: $white;
+            font-family: "Shrikhand", serif;
+            margin-block-end: 00px;
+        }
+    
+        li {
+            margin: 5px;
+            list-style-type: none;
+    
+            a {
+                padding-top: 10px;
+                align-items: center;
+                text-decoration: none;
+                color: $white;
+        
+                i {
+                    padding-right: 10px;
+                }
+            }
         }
     }
 }
 
 .footer_restaurant {
     margin-top: -50px;
+}
+
+/* desktop devices (1024px) */
+@media (min-width: 1024px) {
+
+    // partie footer de la home page 
+
+    footer {
+        align-items: flex-end;
+        justify-content: flex-end;  
+        padding-bottom: 5px;
+        padding-top: 49px;
+        padding-right: 42px;
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+
+
+            //gestion ordre du titre fin de liste
+            .footer_title {
+                order: 1;
+                margin-left: 50px;
+            }
+
+            .footer_space {
+                margin-right: 20px;
+            }
+            
+            li {
+                margin-left: 15px;
+
+                //gestion du titre ohmyfood
+                h2 {
+                    //suppression marge supperieur 
+                    margin: 0px
+                }
+
+            }
+        }
+    }
+    
+
 }

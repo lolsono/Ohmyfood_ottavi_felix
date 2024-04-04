@@ -370,19 +370,29 @@ footer {
   padding-right: 25px;
   background-color: #353535;
 }
-footer p {
+footer ul {
+  padding: 0px;
+}
+footer ul .footer_title {
+  margin-bottom: 20px;
+}
+footer ul h2 {
   font-size: 20px;
   color: white;
   font-family: "Shrikhand", serif;
   margin-block-end: 0px;
 }
-footer a {
+footer ul li {
+  margin: 5px;
+  list-style-type: none;
+}
+footer ul li a {
   padding-top: 10px;
   align-items: center;
   text-decoration: none;
   color: white;
 }
-footer a i {
+footer ul li a i {
   padding-right: 10px;
 }
 
@@ -390,6 +400,33 @@ footer a i {
   margin-top: -50px;
 }
 
+/* desktop devices (1024px) */
+@media (min-width: 1024px) {
+  footer {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    padding-top: 49px;
+    padding-right: 42px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul .footer_title {
+    order: 1;
+    margin-left: 50px;
+  }
+  footer ul .footer_space {
+    margin-right: 20px;
+  }
+  footer ul li {
+    margin-left: 15px;
+  }
+  footer ul li h2 {
+    margin: 0px;
+  }
+}
 .button_purpel {
   height: 50px;
   width: 50%;
