@@ -1,0 +1,41 @@
+//mixin pour la partie animation du coeur
+
+//gestion du label 
+@mixin heart-icon {
+    position: relative;
+
+    //taille du coeur
+    font-size: 21px;
+}
+
+//partie gestion temp transition
+@mixin transition-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+//etat par défaut
+
+@mixin default-void-heart {
+    opacity: 1;
+    color: black;
+}
+
+@mixin full-heart {
+    opacity: 0;
+    color: transparent;
+    background-image: linear-gradient(to top, $secondary, $primary);
+    -webkit-background-clip: text;
+}
+
+//gestion activation etat par checkbox
+
+@mixin checked-void-heart {
+    opacity: 0;
+}
+
+@mixin checked-full-heart {
+    opacity: 1;
+}

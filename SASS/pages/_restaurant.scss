@@ -28,14 +28,44 @@
         justify-content: space-between;
         align-items: center;
 
-        i {
-            margin-right: 30px;
-            font-size: 21px;
-        }
-
         h2 {
             font-family: "Shrikhand", serif;
         }
+
+        .hidden-checkbox {
+            display: none;
+        }
+
+        .heart-icon {
+            @include heart-icon;
+            right: 22px;
+            bottom: 7px;
+            font-size: 21px;
+        }
+        
+        .void_heart {
+            @include transition-heart;
+            @include default-void-heart;
+        }
+        
+        .full_heart {
+            @include transition-heart;
+            @include full-heart;
+        }
+        
+        .hidden-checkbox:checked + .heart-icon .void_heart {
+            @include checked-void-heart;
+        }
+        
+        .hidden-checkbox:checked + .heart-icon .full_heart {
+            @include checked-full-heart;
+        }
+        
+        .card_menu {
+            margin-left: 50px;
+        }
+        
+
     }
 
     .button_center_page {

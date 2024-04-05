@@ -259,12 +259,45 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.main_menu div i {
-  margin-right: 30px;
-  font-size: 21px;
-}
 .main_menu div h2 {
   font-family: "Shrikhand", serif;
+}
+.main_menu div .hidden-checkbox {
+  display: none;
+}
+.main_menu div .heart-icon {
+  position: relative;
+  font-size: 21px;
+  right: 22px;
+  bottom: 7px;
+  font-size: 21px;
+}
+.main_menu div .void_heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  color: black;
+}
+.main_menu div .full_heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+}
+.main_menu div .hidden-checkbox:checked + .heart-icon .void_heart {
+  opacity: 0;
+}
+.main_menu div .hidden-checkbox:checked + .heart-icon .full_heart {
+  opacity: 1;
+}
+.main_menu div .card_menu {
+  margin-left: 50px;
 }
 .main_menu .button_center_page {
   padding-bottom: 40px;
@@ -482,6 +515,41 @@ footer ul li a i {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.a_cards .hidden-checkbox {
+  display: none;
+}
+.a_cards .heart-icon {
+  position: relative;
+  font-size: 21px;
+  grid-area: 2/2/3/3;
+  align-self: center;
+  justify-self: center;
+  bottom: 10px;
+}
+.a_cards .void_heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  color: black;
+}
+.a_cards .full_heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+}
+.a_cards #heart-checkbox-1:checked + .heart-icon .void_heart {
+  opacity: 0;
+}
+.a_cards #heart-checkbox-1:checked + .heart-icon .full_heart {
+  opacity: 1;
+}
 .a_cards .div_text {
   grid-area: 2/1/3/3;
   align-self: center;
@@ -496,11 +564,6 @@ footer ul li a i {
   font-weight: lighter;
   margin-block-start: 0px;
   margin-block-end: 0px;
-}
-.a_cards .div_icone {
-  grid-area: 2/2/3/3;
-  align-self: center;
-  justify-self: center;
 }
 .a_cards .div_icone i {
   font-size: 25px;
