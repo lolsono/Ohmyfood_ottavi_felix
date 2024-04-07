@@ -31,51 +31,82 @@
        
         <section class="section_menu">
 
-           
+           <!-- partie titre et coeur -->
             <div class="div_heart_title">
                 <h2>Le délice des sens</h2>
-                <i class="fa-regular fa-heart"></i>
+                
+                <!-- checkbox vide -->
+                <input type="checkbox" id="heart-checkbox" class="hidden-checkbox">
+                <label for="heart-checkbox" class="heart-icon">
+                    <i class="fa-regular fa-heart void_heart"></i>
+                    <i class="fa-solid fa-heart full_heart"></i>
+                </label>
+                
             </div>
 
             <!-- entrer -->
             <section class="section_entre">
                 <p class="section_titre">Entrées</p>
 
-                <div class="card_menu">
+                <article class="card_menu">
                     <p class="card_menu_titre">Tartare de thon</p>
-                    <p>Assaisonné au yuzu</p>
-                </div>
+                    <div class="card_menu_price">
+                        <p class="title_price">Assaisonné au yuzu</p>
+                        <p class="price">25 €</p>
+                    </div>
+                </article>
 
-                <div class="card_menu">
-                    <p class="card_menu_titre">Bouchée de homard croustillant</p>
-                    <p>Et sa farandole de petits légumes</p>
-                </div>
+                <article class="card_menu">
+                    <p class="card_menu_titre">Bouchée de homard croustillant </p>
+                    
+                    <div class="card_menu_price">
+                        <p class="title_price">Et sa farandole de petits légumes</p>
+                        <p class="price">35 €</p>
+                    </div>
+                </article>
 
-                <div class="card_menu">
-                    <p class="card_menu_titre">Poulet rôti aux herbes de Provence</p>
-                    <p>Et sa crème de truffe</p>
-                </div>
+                <article class="card_menu">
+                    <p class="card_menu_titre">Velouté de cèpes </p>
+
+                    <div class="card_menu_price">
+                        <p class="title_price">Aux truffes</p>
+                        <p class="price">20 €</p>
+                    </div>
+                </article>
 
             </section>
 
              <!-- Plats -->
             <section class="section_entre">
+
                 <p class="section_titre">Plats</p>
 
-                <div class="card_menu">
-                    <p class="card_menu_titre">Poulet rôti aux herbes de Provence</p>
-                    <p>Et sa crème de truffe</p>
-                </div>
+                <article class="card_menu">
+                    <p class="card_menu_titre">Poulet rôti aux herbes de Provence </p>
 
-                <div class="card_menu">
-                    <p class="card_menu_titre">Langouste rôtie</p>
-                    <p>Et ses légumes de saison</p>
-                </div>
+                    <div class="card_menu_price">
+                        <p class="title_price">Et sa crème de truffe</p>
+                        <p class="price">40 €</p>
+                    </div>
+                </article>
 
-                <div class="card_menu">
+                <article class="card_menu">
+                    <p class="card_menu_titre">Langouste rôtie </p>
+
+                    <div class="card_menu_price">
+                        <p class="title_price">Et ses légumes de saison</p>
+                        <p class="price">35 €</p>
+                    </div>
+                </article>
+
+                <article class="card_menu">
                     <p class="card_menu_titre">Côte de bœuf Angus</p>
-                    <p>Et sa purée de panais</p>
-                </div>
+
+                    <div class="card_menu_price">
+                        <p class="title_price">Et sa purée de panais</p>
+                        <p class="price">44 €</p>
+                    </div>
+                </article>
 
             </section>
 
@@ -83,38 +114,69 @@
             <section class="section_entre">
                 <p class="section_titre">Desserts</p>
 
-                <div class="card_menu">
+                <article class="card_menu">
                     <p class="card_menu_titre">Farandole de desserts</p>
-                    <p>Du chef</p>
-                </div>
 
-                <div class="card_menu">
+                    <div class="card_menu_price">
+                        <p class="title_price">Du chef</p>
+                        <p class="price">18 €</p>
+                    </div>
+                </article>
+
+                <article class="card_menu">
                     <p class="card_menu_titre">Crème brulée</p>
-                    <p>Revisitée</p>
-                </div>
 
-                <div class="card_menu">
+                    <div class="card_menu_price">
+                        <p class="title_price">Revisitée</p>
+                        <p class="price">22 €</p>
+                    </div>
+                </article>
+
+                <article class="card_menu">
                     <p class="card_menu_titre">Tiramisu</p>
-                    <p>À la noisette</p>
-                </div>
+
+                    <div class="card_menu_price">
+                        <p class="title_price">À la noisette</p>
+                        <p class="price">23 €</p>
+                    </div>
+                </article>
 
             </section>
 
             <div class="button_center_page">
                 <button class="button_purpel button_purpel--center">Commander</button>
             </div>
-            
+
         </section>
 
     </main>
 
+    <!-- pieds de page -->
     <footer>
-        <p>ohmyfood</p>
+        <!--liste non ordonnée-->
+        <ul>
+            <!-- titre en h2 -->
+            <li class="footer_title">
+                <h2>ohmyfood</h2>
+            </li>
 
-        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> 
-        <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+            <li>
+                <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> 
+            </li>
+
+            <li class="footer_space">
+                <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+            </li>
+
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
     </footer>
 </body>
 </html>

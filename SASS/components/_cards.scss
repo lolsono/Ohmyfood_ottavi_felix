@@ -47,7 +47,9 @@
         //gestion position dans la grids
         grid-area: 2 / 2 / 3 / 3;
         align-self: center; 
-        justify-self: center;
+        justify-self: flex-end;
+
+        padding-right: 42%;
         bottom: 10px;
 
     }
@@ -64,12 +66,41 @@
         @include full-heart;
     }
 
+    //gestion checklist par id
 
+    //cards 1
     #heart-checkbox-1:checked + .heart-icon .void_heart {
         @include checked-void-heart;
     }
     
     #heart-checkbox-1:checked + .heart-icon .full_heart {
+        @include checked-full-heart;
+    }
+
+    //cards 2
+    #heart-checkbox-2:checked + .heart-icon .void_heart {
+        @include checked-void-heart;
+    }
+    
+    #heart-checkbox-2:checked + .heart-icon .full_heart {
+        @include checked-full-heart;
+    }
+
+    //cards 3
+    #heart-checkbox-3:checked + .heart-icon .void_heart {
+        @include checked-void-heart;
+    }
+    
+    #heart-checkbox-3:checked + .heart-icon .full_heart {
+        @include checked-full-heart;
+    }
+
+    //cards 4
+    #heart-checkbox-4:checked + .heart-icon .void_heart {
+        @include checked-void-heart;
+    }
+    
+    #heart-checkbox-4:checked + .heart-icon .full_heart {
         @include checked-full-heart;
     }
     
@@ -92,21 +123,6 @@
         } 
     }
 
-    .div_icone { 
-         
-
-
-        i {
-            font-size: 25px;
-            color: $secondary_text_color;
-        } 
-
-        //gestion quand l'icone et cliquer du coeur 
-        
-    
-
-    }
-
 }
 
 .cards_new {
@@ -127,6 +143,10 @@
             background-color: $ligth_green;
             padding-top: 5px;
         }
+    }
+
+    #cards_new_invisible {
+        display: none;
     }
 }
 

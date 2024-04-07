@@ -39,3 +39,8 @@
 @mixin checked-full-heart {
     opacity: 1;
 }
+
+//gestion des ombre du site 
+@mixin box_shadow {
+    box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}

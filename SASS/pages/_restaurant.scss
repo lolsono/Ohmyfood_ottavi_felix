@@ -99,7 +99,7 @@
             border: none;
             border-radius: 20px;
             background-color: $secondary_background;
-            box-shadow: 0px 5px 10px 1px;
+            @include box_shadow;
             justify-content: center;
         
             .card_menu_titre {

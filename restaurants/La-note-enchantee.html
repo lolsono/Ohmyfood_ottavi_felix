@@ -31,56 +31,91 @@
        
         <section class="section_menu">
 
-           
+           <!-- partie titre et coeur -->
             <div class="div_heart_title">
                 <h2>La note enchantée</h2>
-                <i class="fa-regular fa-heart"></i>
+                
+                <!-- checkbox vide -->
+                <input type="checkbox" id="heart-checkbox" class="hidden-checkbox">
+                <label for="heart-checkbox" class="heart-icon">
+                    <i class="fa-regular fa-heart void_heart"></i>
+                    <i class="fa-solid fa-heart full_heart"></i>
+                </label>
+                
             </div>
 
             <!-- entrer -->
             <section class="section_entre">
                 <p class="section_titre">Entrées</p>
 
-                <div class="card_menu">
+                <article class="card_menu">
                     <p class="card_menu_titre">Ravioles de foie gras</p>
-                    <p>Accompagnées de leur crème à la truffe</p>
-                </div>
+                    <div class="card_menu_price">
+                        <p class="title_price">Accompagnées de leur crème à la truffe</p>
+                        <p class="price">25 €</p>
+                    </div>
+                </article>
 
-                <div class="card_menu">
+                <article class="card_menu">
                     <p class="card_menu_titre">Caviar osciètre</p>
-                    <p>Sur blini à la farine de blé noir</p>
-                </div>
+                    
+                    <div class="card_menu_price">
+                        <p class="title_price">Sur blini à la farine de blé noir</p>
+                        <p class="price">35 €</p>
+                    </div>
+                </article>
 
-                <div class="card_menu">
+                <article class="card_menu">
                     <p class="card_menu_titre">Homard et espuma de potiron</p>
-                    <p>Marinés aux zestes d'orange</p>
-                </div>
 
-                <div class="card_menu">
+                    <div class="card_menu_price">
+                        <p class="title_price">Marinés aux zestes d'orange</p>
+                        <p class="price">20 €</p>
+                    </div>
+                </article>
+
+                <article class="card_menu">
                     <p class="card_menu_titre">Foie gras de canard cuit entier</p>
-                    <p>Confiture de figue et pain toasté</p>
-                </div>
+
+                    <div class="card_menu_price">
+                        <p class="title_price">Confiture de figue et pain toasté</p>
+                        <p class="price">35 €</p>
+                    </div>
+                </article>
 
             </section>
 
              <!-- Plats -->
             <section class="section_entre">
+
                 <p class="section_titre">Plats</p>
 
-                <div class="card_menu">
+                <article class="card_menu">
                     <p class="card_menu_titre">Noix de coquilles Saint-Jacques</p>
-                    <p>Sur lit de purée de céleri-rave</p>
-                </div>
 
-                <div class="card_menu">
+                    <div class="card_menu_price">
+                        <p class="title_price">Sur lit de purée de céleri-rave</p>
+                        <p class="price">40 €</p>
+                    </div>
+                </article>
+
+                <article class="card_menu">
                     <p class="card_menu_titre">Langoustine poêlée</p>
-                    <p>Purée de patate douce</p>
-                </div>
 
-                <div class="card_menu">
+                    <div class="card_menu_price">
+                        <p class="title_price">Purée de patate douce</p>
+                        <p class="price">35 €</p>
+                    </div>
+                </article>
+
+                <article class="card_menu">
                     <p class="card_menu_titre">Mijoté de queue de bœuf </p>
-                    <p>Et riz sauvage aux zestes de citron</p>
-                </div>
+
+                    <div class="card_menu_price">
+                        <p class="title_price">Et riz sauvage aux zestes de citron</p>
+                        <p class="price">44 €</p>
+                    </div>
+                </article>
 
             </section>
 
@@ -88,38 +123,69 @@
             <section class="section_entre">
                 <p class="section_titre">Desserts</p>
 
-                <div class="card_menu">
+                <article class="card_menu">
                     <p class="card_menu_titre">Macaron noisette et chocolat</p>
-                    <p>Glace au caramel brun et sel de Guérande</p>
-                </div>
 
-                <div class="card_menu">
-                    <p class="card_menu_titre">Baba au rhum revisité</p>
-                    <p>Avec son coulis de citron</p>
-                </div>
+                    <div class="card_menu_price">
+                        <p class="title_price">Glace au caramel brun et sel de Guérande</p>
+                        <p class="price">18 €</p>
+                    </div>
+                </article>
 
-                <div class="card_menu">
-                    <p class="card_menu_titre">Tarte au citron meringuée</p>
-                    <p>Déstructurée</p>
-                </div>
+                <article class="card_menu">
+                    <p class="card_menu_titre">Baba au rhum revisité </p>
+
+                    <div class="card_menu_price">
+                        <p class="title_price">Avec son coulis de citron</p>
+                        <p class="price">22 €</p>
+                    </div>
+                </article>
+
+                <article class="card_menu">
+                    <p class="card_menu_titre">Tarte au citron meringuée </p>
+
+                    <div class="card_menu_price">
+                        <p class="title_price">Déstructurée</p>
+                        <p class="price">23 €</p>
+                    </div>
+                </article>
 
             </section>
 
             <div class="button_center_page">
                 <button class="button_purpel button_purpel--center">Commander</button>
             </div>
-            
+
         </section>
 
     </main>
 
+    <!-- pieds de page -->
     <footer>
-        <p>ohmyfood</p>
+        <!--liste non ordonnée-->
+        <ul>
+            <!-- titre en h2 -->
+            <li class="footer_title">
+                <h2>ohmyfood</h2>
+            </li>
 
-        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> 
-        <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+            <li>
+                <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> 
+            </li>
+
+            <li class="footer_space">
+                <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+            </li>
+
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
     </footer>
 </body>
 </html>
