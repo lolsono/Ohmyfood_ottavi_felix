@@ -48,12 +48,30 @@
             <section class="section_entre">
                 <p class="section_titre">Entrées</p>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Fricassée d'escargots</p>
-                    <div class="card_menu_price">
-                        <p class="title_price">Au piment d'Espelette</p>
-                        <p class="price">25 €</p>
-                    </div>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_1" type="checkbox" id="check_list_1" class="hidden-checkbox">
+
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_1" class="check_list_label_1">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div id="transition_width" class="card_menu">
+                            <p class="card_menu_titre">Fricassée d'escargots</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Au piment d'Espelette</p>
+                                <p class="price">25 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
                 <article class="card_menu">

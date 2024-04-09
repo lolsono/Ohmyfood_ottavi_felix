@@ -30,8 +30,6 @@
     -webkit-background-clip: text;
 }
 
-//gestion activation etat par checkbox
-
 @mixin checked-void-heart {
     opacity: 0;
 }
@@ -44,3 +42,24 @@
 @mixin box_shadow {
     box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
+
+
+
+//animation ajout repas a la liste
+//mixin de la partie card_menu general car utiliser pour carte classique et la sous position
+@mixin card_menu_box {
+
+    height: 72px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+
+
+
+

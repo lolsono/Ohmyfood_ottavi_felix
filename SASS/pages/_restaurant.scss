@@ -22,6 +22,13 @@
 
     }
 
+    //cacher les checkbox
+    //du coeur et partie check list menu
+    .hidden-checkbox {
+        display: none;
+    }
+
+    //gestion titre de la page avec transition du coeur 
     div {
         width: 100%;
         display: flex;
@@ -30,10 +37,6 @@
 
         h2 {
             font-family: "Shrikhand", serif;
-        }
-
-        .hidden-checkbox {
-            display: none;
         }
 
         .heart-icon {
@@ -52,6 +55,8 @@
             @include transition-heart;
             @include full-heart;
         }
+
+        //gestion etat checkbox et donc transition
         
         .hidden-checkbox:checked + .heart-icon .void_heart {
             @include checked-void-heart;
@@ -73,6 +78,13 @@
         display: flex;
         justify-content: center;
     }
+
+    //gestion checklist par id pour checkbox list
+        
+    #check_list_1:checked  {
+        width: 86%;
+    }
+
     
     // gestion cards menu restaurant
 
@@ -88,19 +100,74 @@
             border-bottom: 1mm solid $ligth_green;
         }
 
+        .check_list_label {
+            position: relative;
+        }
+
+        //gestion cards checklist
+        .check_list_box {
+
+            //gestion position des partie et couche entre article et div
+            position: absolute;
+            z-index: 1;
+
+            //aligne une fois dessous a la position de la cards
+            top: 0%;
+
+            //box commun avec cards_menu
+            @include card_menu_box;
+
+            //personalisation
+            background-color: $ligth_green;
+
+            @include box_shadow;
+            align-items: flex-end;
+
+            //personalisation couleur icone
+            i {
+                color: $white;
+                font-size: 20px;
+                margin-right: 7%;
+            }
+
+        }
+
+        
+        //cards 1
+        #check_list_1:checked + .check_list_label_1 #transition_width {
+            width: 80%;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+        }
+
+        //gestion label en position relative pour alligner les deux box
+        label {
+            position: relative;
+        }
+        
         //cards
         .card_menu {
             margin-bottom: 10px;
-            height: 72px;
-            width: 100%;
+            background-color: $secondary_background;
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: none;
-            border-radius: 20px;
-            background-color: $secondary_background;
-            @include box_shadow;
             justify-content: center;
+            
+            //importation mixin
+            @include box_shadow;
+            @include card_menu_box;
+
+            //importation gestion transition
+            //@include transition-checked-box;
+
+            transition: width 200ms;
+
+            //gestion pour animation check menu
+            //gestion position couche 
+            position: relative;
+            z-index: 2;
         
             .card_menu_titre {
                 font-weight: bold;
@@ -132,6 +199,8 @@
             .card_menu_price {
 
                 .price {
+                    padding-bottom: 10px;
+                    padding-right: 10px;
                     text-align: center;
                     margin: 0px;
                     font-weight: bold;
@@ -143,9 +212,15 @@
                     margin-bottom: 0px;
                     margin-top: 0px;
                     height: 100%;
-                    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-                    overflow: hidden; /* Cache le texte qui dépasse */
-                    text-overflow: ellipsis; /* Ajoute une ellipse à la fin du texte coupé */
+
+                    //Empêche le texte de passer à la ligne 
+                    white-space: nowrap;
+
+                    //Cache le texte qui dépasse
+                    overflow: hidden;
+
+                    //Ajoute une ellipse à la fin du texte coupé
+                    text-overflow: ellipsis; 
                     margin-left: 15px;
                 }
 
@@ -168,8 +243,20 @@
             //effet de decallage de l'interieur
             padding-left: 200px;
             padding-right: 200px;
-        }
 
+            //ajustement ouverture animation checklist
+            #check_list_1:checked + .check_list_label_1 #transition_width {
+                width: 90%;
+
+                .check_list_box {
+                    
+                    i {
+                        margin-right: 3%;
+                    }
+
+                }
+            }
+        }
     }
 
 }
