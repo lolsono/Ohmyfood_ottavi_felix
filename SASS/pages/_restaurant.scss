@@ -6,7 +6,7 @@
         object-fit: cover;
     }
 
-    .section_menu {
+    .box_menu {
 
         //pour supprimer le blanc en bas
         margin-bottom: -50px;
@@ -65,11 +65,6 @@
         .hidden-checkbox:checked + .heart-icon .full_heart {
             @include checked-full-heart;
         }
-        
-        .card_menu {
-            margin-left: 50px;
-        }
-        
 
     }
 
@@ -78,19 +73,142 @@
         display: flex;
         justify-content: center;
     }
-
-    //gestion checklist par id pour checkbox list
         
-    #check_list_1:checked  {
-        width: 86%;
+    //Lorsque la case est cochée, ajustez la position de la boîte
+    
+    //gestion 1 article
+    
+    #check_list_1:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
+
+    #check_list_1:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
+    //gestion 2 article
+
+    #check_list_2:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_2:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
+    //gestion 3 article
+
+    #check_list_3:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_3:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
+    //gestion 4 article
+
+    #check_list_4:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_4:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
+    //gestion 5 article
+
+    #check_list_5:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_5:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
+    //gestion 6 article
+
+    #check_list_6:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_6:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
+    //gestion 7 article
+
+    #check_list_7:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_7:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
+    //gestion 8 article
+
+    #check_list_8:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_8:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
+    //gestion 9 article
+
+    #check_list_9:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_9:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
 
     
     // gestion cards menu restaurant
 
-    .section_entre {
+    .menu {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-        padding-bottom: $space_after_pages;
+        padding-bottom: 4%;
+
+        article {
+            width: 100%;
+        }
+
 
         p {
             padding-bottom: 8px;
@@ -107,12 +225,15 @@
         //gestion cards checklist
         .check_list_box {
 
-            //gestion position des partie et couche entre article et div
-            position: absolute;
-            z-index: 1;
+            transition: left 0.1ms;
 
-            //aligne une fois dessous a la position de la cards
+            position: absolute;
+            left: 100%;
             top: 0%;
+            width: 56px;
+
+            //gestion temp transition
+            transition: left 400ms;
 
             //box commun avec cards_menu
             @include card_menu_box;
@@ -120,54 +241,31 @@
             //personalisation
             background-color: $ligth_green;
 
-            @include box_shadow;
-            align-items: flex-end;
+            //gestion des ombre
+
+            //on enleve les bord arrondi
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
 
             //personalisation couleur icone
             i {
                 color: $white;
                 font-size: 20px;
-                margin-right: 7%;
             }
 
-        }
-
-        
-        //cards 1
-        #check_list_1:checked + .check_list_label_1 #transition_width {
-            width: 80%;
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 0px;
-
-        }
-
-        //gestion label en position relative pour alligner les deux box
-        label {
-            position: relative;
         }
         
         //cards
         .card_menu {
+            width: 100%;
             margin-bottom: 10px;
             background-color: $secondary_background;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+
+            transition: width 0.3ms;
             
             //importation mixin
             @include box_shadow;
             @include card_menu_box;
-
-            //importation gestion transition
-            //@include transition-checked-box;
-
-            transition: width 200ms;
-
-            //gestion pour animation check menu
-            //gestion position couche 
-            position: relative;
-            z-index: 2;
         
             .card_menu_titre {
                 font-weight: bold;
@@ -230,12 +328,12 @@
 }
 
 /* desktop devices (1024px) */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
     // partie footer de la home page 
     .main_menu {
 
-        .section_menu{
+        .box_menu{
             //effet de decallage de l'exterieur
             margin-left: $space_side_desktop;
             margin-right: $space_side_desktop;
@@ -244,18 +342,6 @@
             padding-left: 200px;
             padding-right: 200px;
 
-            //ajustement ouverture animation checklist
-            #check_list_1:checked + .check_list_label_1 #transition_width {
-                width: 90%;
-
-                .check_list_box {
-                    
-                    i {
-                        margin-right: 3%;
-                    }
-
-                }
-            }
         }
     }
 

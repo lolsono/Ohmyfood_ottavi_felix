@@ -152,7 +152,7 @@
 
 
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
     //gestion espace supérieur et inférieur
     .section_cards  {
@@ -165,15 +165,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
     
             //réglage ecart entre les cards 
             article {
-                width: 43%;
-                margin-top: 24px;
-                margin-bottom: 0px;
-                margin-right: 30px;
-                margin-left: 30px;
+                width: 48%;
             }
         }
     }
