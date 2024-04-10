@@ -1,0 +1,52 @@
+body {
+
+    .loader {
+        //filme opac pour chargement
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        //passer devant toute les couche
+        z-index: 999;
+
+        //gestion couleur de fond et opaciter
+        background-color: $secondary_background;
+        opacity: 0.7;
+
+        //centre la loader
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        animation: fadeOut 2s forwards; /* animation de disparition après 3 secondes */
+
+        .loader_spinner {
+            position: absolute;
+    
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 9px solid;
+            border-color: $primary_text_color;
+            border-right-color: $primary;
+        
+        //gestion de l'animation repeter de fassons ilimiter
+        //1 cycle de 1 seconde a chaque tour
+        //un temp d execution linear
+            animation: spinner 1s infinite linear;
+        }
+        
+        @keyframes spinner {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; display: none; } /* disparition de la div overlay */
+        }
+    }
+}
