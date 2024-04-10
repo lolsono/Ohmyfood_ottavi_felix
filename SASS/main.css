@@ -1,4 +1,128 @@
 @charset "UTF-8";
+#check_list_1:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_1:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+#check_list_2:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_2:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+#check_list_3:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_3:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+#check_list_4:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_4:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+#check_list_5:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_5:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+#check_list_6:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_6:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+#check_list_7:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_7:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+#check_list_8:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_8:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+#check_list_9:checked + .check_list_label .card_menu {
+  width: calc(100% - 56px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#check_list_9:checked + .check_list_label .check_list_box {
+  left: calc(100% - 56px);
+  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+}
+
+.menu {
+  opacity: 0;
+  animation: apparition_cards 1s forwards;
+}
+
+#menu_1 {
+  animation-delay: 0.33s;
+}
+
+#menu_2 {
+  animation-delay: 0.66s;
+}
+
+#menu_3 {
+  animation-delay: 1s;
+}
+
+@keyframes apparition_cards {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .shrikhand-regular {
   font-family: "Shrikhand", serif;
   font-weight: 400;
@@ -300,87 +424,6 @@ nav {
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
-}
-.main_menu #check_list_1:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_1:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
-}
-.main_menu #check_list_2:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_2:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
-}
-.main_menu #check_list_3:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_3:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
-}
-.main_menu #check_list_4:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_4:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
-}
-.main_menu #check_list_5:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_5:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
-}
-.main_menu #check_list_6:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_6:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
-}
-.main_menu #check_list_7:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_7:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
-}
-.main_menu #check_list_8:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_8:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
-}
-.main_menu #check_list_9:checked + .check_list_label .card_menu {
-  width: calc(100% - 56px);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.main_menu #check_list_9:checked + .check_list_label .check_list_box {
-  left: calc(100% - 56px);
-  box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 .main_menu .menu {
   overflow: hidden;
@@ -753,7 +796,7 @@ body .loader {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeOut 2s forwards; /* animation de disparition après 3 secondes */
+  animation: fadeOut 1s forwards; /* animation de disparition après 3 secondes */
 }
 body .loader .loader_spinner {
   position: absolute;
