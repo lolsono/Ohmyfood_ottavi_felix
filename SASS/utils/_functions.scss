@@ -117,6 +117,19 @@
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
+    //gestion 10 article
+
+    #check_list_10:checked + .check_list_label .card_menu {
+        width: calc(100% - 56px); 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #check_list_10:checked + .check_list_label .check_list_box {
+         left: calc(100% - 56px);
+         box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+    }
+
 
     .menu {
         opacity: 0;

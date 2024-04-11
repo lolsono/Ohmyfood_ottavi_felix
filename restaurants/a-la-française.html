@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/SASS/pages/_home.scss">
     <link rel="stylesheet" href="/SASS/main.css">
     <script src="https://kit.fontawesome.com/f8c1978cd3.js" crossorigin="anonymous"></script>
-    <title>Menu-La palette du goût</title>
+    <title>Menu-À la française</title>
 
     <!-- police Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +27,9 @@
     </header>
 
     <main class="main_menu">
-        <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+        <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française">
        
-        <section class="section_menu">
+        <section class="box_menu">
 
            <!-- partie titre et coeur -->
             <div class="div_heart_title">
@@ -45,103 +45,257 @@
             </div>
 
             <!-- entrer -->
-            <section class="section_entre">
+            <div id="menu_1" class="menu">
                 <p class="section_titre">Entrées</p>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Tartare de poulpe acidulé</p>
-                    <div class="card_menu_price">
-                        <p class="title_price">Aux zestes d'orange</p>
-                        <p class="price">25 €</p>
-                    </div>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_1" type="checkbox" id="check_list_1" class="hidden-checkbox">
+
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_1" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Tartare de poulpe acidulé</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Aux zestes d'orange</p>
+                                <p class="price">25 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Velouté de légumes d'antan</p>
-                    
-                    <div class="card_menu_price">
-                        <p class="title_price">Carotte, panais, topinambour</p>
-                        <p class="price">35 €</p>
-                    </div>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_2" type="checkbox" id="check_list_2" class="hidden-checkbox">
+
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_2" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Velouté de légumes d'antan</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Carotte, panais, topinambour</p>
+                                <p class="price">35 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Soupe à l'oignon</p>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_3" type="checkbox" id="check_list_3" class="hidden-checkbox">
 
-                    <div class="card_menu_price">
-                        <p class="title_price">Revisitée</p>
-                        <p class="price">20 €</p>
-                    </div>
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_3" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Soupe à l'oignon</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Revisitée</p>
+                                <p class="price">20 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-            </section>
+            </div>
 
              <!-- Plats -->
-            <section class="section_entre">
+            <div id="menu_2" class="menu">
 
                 <p class="section_titre">Plats</p>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Coquilles Saint-Jacques</p>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_4" type="checkbox" id="check_list_4" class="hidden-checkbox">
 
-                    <div class="card_menu_price">
-                        <p class="title_price">Accompagnées d'une purée de panais</p>
-                        <p class="price">40 €</p>
-                    </div>
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_4" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Coquilles Saint-Jacques</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Accompagnées d'une purée de panais</p>
+                                <p class="price">40 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Magret de canard</p>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_5" type="checkbox" id="check_list_5" class="hidden-checkbox">
 
-                    <div class="card_menu_price">
-                        <p class="title_price">Et parmentier de pommes de terre</p>
-                        <p class="price">35 €</p>
-                    </div>
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_5" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Magret de canard</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Et parmentier de pommes de terre</p>
+                                <p class="price">35 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Pigeonneau d’Ille-et-Vilaine</p>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_6" type="checkbox" id="check_list_6" class="hidden-checkbox">
 
-                    <div class="card_menu_price">
-                        <p class="title_price">Sur son lit de gnocchis aux légumes</p>
-                        <p class="price">44 €</p>
-                    </div>
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_6" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Pigeonneau d’Ille-et-Vilaine</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Sur son lit de gnocchis aux légumes</p>
+                                <p class="price">44 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-            </section>
+            </div>
 
             <!-- Desserts -->
-            <section class="section_entre">
+            <div id="menu_3" class="menu">
                 <p class="section_titre">Desserts</p>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Pétales de violettes glacés</p>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_7" type="checkbox" id="check_list_7" class="hidden-checkbox">
 
-                    <div class="card_menu_price">
-                        <p class="title_price">Et purée de noisettes</p>
-                        <p class="price">18 €</p>
-                    </div>
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_7" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Pétales de violettes glacés</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Et purée de noisettes</p>
+                                <p class="price">18 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Fondant au chocolat</p>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_8" type="checkbox" id="check_list_8" class="hidden-checkbox">
 
-                    <div class="card_menu_price">
-                        <p class="title_price">Revisité</p>
-                        <p class="price">22 €</p>
-                    </div>
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_8" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Fondant au chocolat</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Revisité</p>
+                                <p class="price">22 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-                <article class="card_menu">
-                    <p class="card_menu_titre">Millefeuille croustillant</p>
+                <article>
+                    <!-- chekbox vide pour toute la cards -->
+                    <input  name="check_list_9" type="checkbox" id="check_list_9" class="hidden-checkbox">
 
-                    <div class="card_menu_price">
-                        <p class="title_price">Myrtilles et pâte d’amande</p>
-                        <p class="price">23 €</p>
-                    </div>
+                    <!-- animation ajout list check -->
+                    <!-- for le lien avec l'input -->
+                    <label for="check_list_9" class="check_list_label">
+
+                        <!-- gestion de l'article cards menu -->
+
+                        <div class="card_menu">
+                            <p class="card_menu_titre">Millefeuille croustillant</p>
+                            <div class="card_menu_price">
+                                <p class="title_price">Myrtilles et pâte d’amande</p>
+                                <p class="price">23 €</p>
+                            </div>
+                        </div>
+
+                        <!-- boite sous l'article -->
+                        <div class="check_list_box">
+                            <!-- icone check -->
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </article>
 
-            </section>
+            </div>
 
             <div class="button_center_page">
                 <button class="button_purpel button_purpel--center">Commander</button>
