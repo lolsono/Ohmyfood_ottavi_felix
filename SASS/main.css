@@ -662,12 +662,12 @@ footer ul li a i {
     width: 218px;
   }
 }
-.a_cards {
+article .a_cards {
   display: block;
   text-decoration: none;
   padding-bottom: 30px;
 }
-.a_cards .div_cards {
+article .a_cards .div_cards {
   display: grid;
   grid-template-columns: 1fr 0.3fr;
   grid-template-rows: 183px 67px;
@@ -677,20 +677,35 @@ footer ul li a i {
   background-color: white;
   border-radius: 15px;
 }
-.a_cards .div_img {
+article .a_cards .div_img {
   grid-area: 1/1/2/3;
 }
-.a_cards .div_img img {
+article .a_cards .div_img img {
   border-radius: 15px 15px 0px 0px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.a_cards .hidden-checkbox {
+article .a_cards .div_text {
+  grid-area: 2/1/3/3;
+  align-self: center;
+  margin-left: 10px;
+}
+article .a_cards .div_text .cards_name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+article .a_cards .div_text p {
+  color: black;
+  font-weight: lighter;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+article .hidden-checkbox {
   display: none;
 }
-.a_cards .heart-icon {
+article .heart-icon {
   position: relative;
   font-size: 21px;
   grid-area: 2/2/3/3;
@@ -699,7 +714,7 @@ footer ul li a i {
   padding-right: 42%;
   bottom: 10px;
 }
-.a_cards .void_heart {
+article .void_heart {
   position: absolute;
   top: 0;
   left: 0;
@@ -707,7 +722,7 @@ footer ul li a i {
   opacity: 1;
   color: black;
 }
-.a_cards .full_heart {
+article .full_heart {
   position: absolute;
   top: 0;
   left: 0;
@@ -717,44 +732,29 @@ footer ul li a i {
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
 }
-.a_cards #heart-checkbox-1:checked + .heart-icon .void_heart {
+article #heart-checkbox-1:checked + .heart-icon .void_heart {
   opacity: 0;
 }
-.a_cards #heart-checkbox-1:checked + .heart-icon .full_heart {
+article #heart-checkbox-1:checked + .heart-icon .full_heart {
   opacity: 1;
 }
-.a_cards #heart-checkbox-2:checked + .heart-icon .void_heart {
+article #heart-checkbox-2:checked + .heart-icon .void_heart {
   opacity: 0;
 }
-.a_cards #heart-checkbox-2:checked + .heart-icon .full_heart {
+article #heart-checkbox-2:checked + .heart-icon .full_heart {
   opacity: 1;
 }
-.a_cards #heart-checkbox-3:checked + .heart-icon .void_heart {
+article #heart-checkbox-3:checked + .heart-icon .void_heart {
   opacity: 0;
 }
-.a_cards #heart-checkbox-3:checked + .heart-icon .full_heart {
+article #heart-checkbox-3:checked + .heart-icon .full_heart {
   opacity: 1;
 }
-.a_cards #heart-checkbox-4:checked + .heart-icon .void_heart {
+article #heart-checkbox-4:checked + .heart-icon .void_heart {
   opacity: 0;
 }
-.a_cards #heart-checkbox-4:checked + .heart-icon .full_heart {
+article #heart-checkbox-4:checked + .heart-icon .full_heart {
   opacity: 1;
-}
-.a_cards .div_text {
-  grid-area: 2/1/3/3;
-  align-self: center;
-  margin-left: 10px;
-}
-.a_cards .div_text .cards_name {
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-.a_cards .div_text p {
-  color: black;
-  font-weight: lighter;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
 }
 
 .cards_new .div_news {

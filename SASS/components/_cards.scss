@@ -1,36 +1,61 @@
 //cards create style
 
-.a_cards {
-    display: block;
-    text-decoration: none;
-    padding-bottom: 30px;
-
-    //size cards
-    .div_cards {
-
-        //gestion de la grille 
-        display: grid;
-        grid-template-columns: 1fr 0.3fr;
-        grid-template-rows: 183px 67px;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-
-        height: 251px;
-        background-color: $white;
-        border-radius: $cards_border--arrounds;
-    }
-
-    //img cards
-    .div_img { 
-        grid-area: 1 / 1 / 2 / 3; 
-
-        img {
-            border-radius: 15px 15px 0px 0px;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+article {
+    
+    .a_cards {
+        display: block;
+        text-decoration: none;
+        padding-bottom: 30px;
+    
+        //size cards
+        .div_cards {
+    
+            //gestion de la grille 
+            display: grid;
+            grid-template-columns: 1fr 0.3fr;
+            grid-template-rows: 183px 67px;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+    
+            height: 251px;
+            background-color: $white;
+            border-radius: $cards_border--arrounds;
         }
+    
+        //img cards
+        .div_img { 
+            grid-area: 1 / 1 / 2 / 3; 
+    
+            img {
+                border-radius: 15px 15px 0px 0px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+    
+        //gestion du texte des cards
+        .div_text { 
+            grid-area: 2 / 1 / 3 / 3;
+            align-self: center; 
+            margin-left: 10px;
+    
+            .cards_name {
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+        
+            p {
+                color: $secondary_text_color;
+                font-weight: lighter;
+                margin-block-start: 0px;
+                margin-block-end: 0px;
+            } 
+        }
+    
     }
+
 
     //gestion checkbox vide + heart transition
 
@@ -104,25 +129,6 @@
         @include checked-full-heart;
     }
     
-    //gestion du texte des cards
-    .div_text { 
-        grid-area: 2 / 1 / 3 / 3;
-        align-self: center; 
-        margin-left: 10px;
-
-        .cards_name {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-    
-        p {
-            color: $secondary_text_color;
-            font-weight: lighter;
-            margin-block-start: 0px;
-            margin-block-end: 0px;
-        } 
-    }
-
 }
 
 .cards_new {
