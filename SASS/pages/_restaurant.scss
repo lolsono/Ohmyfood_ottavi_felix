@@ -141,7 +141,7 @@
         .card_menu {
             width: 100%;
             margin-bottom: 10px;
-            background-color: $secondary_background;
+            background-color: $white;
 
             transition: width 0.3ms;
             
@@ -150,6 +150,7 @@
             @include card_menu_box;
         
             .card_menu_titre {
+                font-size: 18px;
                 font-weight: bold;
                 padding: 0px;
 
@@ -184,11 +185,12 @@
                     text-align: center;
                     margin: 0px;
                     font-weight: bold;
-                    width: 21%;
+                    width: 13%;
                     color: $primary_text_color;
                 }
                 
                 .title_price {
+                    font-size: 15px;
                     margin-bottom: 0px;
                     margin-top: 0px;
                     height: 100%;
@@ -216,13 +218,10 @@
     .main_menu {
 
         .box_menu{
-            //effet de decallage de l'exterieur
-            margin-left: $space_side_desktop;
-            margin-right: $space_side_desktop;
-
-            //effet de decallage de l'interieur
-            padding-left: 200px;
-            padding-right: 200px;
+            margin-left: 11%;
+            margin-right: 11%;
+            padding-left: 17%;
+            padding-right: 17%;
 
         }
     }

@@ -69,8 +69,10 @@ nav {
 .section_fonctionnement {
     display: flex;
     flex-direction: column;
-    padding-left: $space_side_pages;
-    padding-right: $space_side_pages;
+
+    h2 {
+        margin-left: $space_side_pages;
+    }
 
     //gestion alignement telephone barre fonctionement
     ol {
@@ -104,7 +106,7 @@ nav {
 
             figure {
                 margin-left: 0px;
-                    margin-right: 25px;
+                margin-right: 25px;
                 height: 72px;
                 width: 100%;
                 display: flex;
@@ -124,7 +126,7 @@ nav {
                 }
     
                 i {
-                    margin-right: 30px;
+                    margin-right: 13px;
                     color: $primary_text_color;
                 }
 
@@ -162,8 +164,12 @@ nav {
 
 
     .section_fonctionnement{
-        padding-left: $space_side_desktop;
-        padding-right: $space_side_desktop;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+        h2 {
+            margin-left: 0px;
+        }
 
         //gestion alignement desktop barre fonctionement
         ol {
@@ -178,7 +184,11 @@ nav {
 
                 figure {
                     margin-left: 0px;
-                    margin-right: 25px;
+                    margin-right: 0px;
+                }
+
+                figcaption {
+                    width: 57%;
                 }
             }
         }

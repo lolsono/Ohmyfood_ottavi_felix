@@ -1,7 +1,16 @@
 //cards create style
 
 article {
-    
+
+
+    .lien_cards {
+        position: absolute;
+        display: block;
+        background-color: transparent;
+        width: 90%;
+        height: 25%;
+    }
+
     .a_cards {
         display: block;
         text-decoration: none;
@@ -42,6 +51,8 @@ article {
             margin-left: 10px;
     
             .cards_name {
+                margin: 0px;
+                font-size: 18px;
                 font-weight: bold;
                 margin-bottom: 8px;
             }
@@ -56,6 +67,15 @@ article {
     
     }
 
+    .heart {
+        //gestion position dans la grids
+        grid-area: 2 / 2 / 3 / 3;
+        align-self: center; 
+        justify-self: flex-end;
+
+        padding-right: 42%;
+        bottom: 10px;
+    }
 
     //gestion checkbox vide + heart transition
 
@@ -68,15 +88,6 @@ article {
     //gestion position du coeur 
     .heart-icon {
         @include heart-icon;
-
-        //gestion position dans la grids
-        grid-area: 2 / 2 / 3 / 3;
-        align-self: center; 
-        justify-self: flex-end;
-
-        padding-right: 42%;
-        bottom: 10px;
-
     }
 
     //on met les deux icone en absolut et on dit leur temp de transition
@@ -164,8 +175,8 @@ article {
     .section_cards  {
         padding-top: 4%;
         padding-bottom: 2%;
-        padding-left: $space_side_desktop;
-        padding-right: $space_side_desktop;
+        padding-left: 10%;
+        padding-right: 10%;
 
         .organiz_cards_reponsive {
             display: flex;

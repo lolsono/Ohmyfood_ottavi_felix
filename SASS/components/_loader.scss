@@ -20,7 +20,7 @@ body {
         align-items: center;
         justify-content: center;
 
-        animation: fadeOut 1s forwards; /* animation de disparition après 3 secondes */
+        animation: fadeOut 2s forwards; /* animation de disparition après 3 secondes */
 
         .loader_spinner {
             position: absolute;
@@ -35,7 +35,7 @@ body {
         //gestion de l'animation repeter de fassons ilimiter
         //1 cycle de 1 seconde a chaque tour
         //un temp d execution linear
-            animation: spinner 1s infinite linear;
+            animation: spinner 2s infinite linear;
         }
         
         @keyframes spinner {
