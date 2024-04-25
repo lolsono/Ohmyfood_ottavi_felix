@@ -2,133 +2,132 @@
     
     //gestion 1 article
     
-    #check_list_1:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_1:checked ~ #containner_1 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_1:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_1:checked ~ #check_1 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
     //gestion 2 article
 
-    #check_list_2:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_2:checked ~ #containner_2 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_2:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_2:checked ~ #check_2 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
     //gestion 3 article
 
-    #check_list_3:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_3:checked ~ #containner_3 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_3:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_3:checked ~ #check_3 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
     //gestion 4 article
 
-    #check_list_4:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_4:checked ~ #containner_4 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_4:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_4:checked ~ #check_4 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
     //gestion 5 article
 
-    #check_list_5:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_5:checked ~ #containner_5 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_5:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_5:checked ~ #check_5 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
     //gestion 6 article
 
-    #check_list_6:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_6:checked ~ #containner_6 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_6:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_6:checked ~ #check_6 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
     //gestion 7 article
 
-    #check_list_7:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_7:checked ~ #containner_7 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_7:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_7:checked ~ #check_7 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
     //gestion 8 article
 
-    #check_list_8:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_8:checked ~ #containner_8 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_8:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_8:checked ~ #check_8 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
     //gestion 9 article
 
-    #check_list_9:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_9:checked ~ #containner_9 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_9:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_9:checked ~ #check_9 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
     //gestion 10 article
 
-    #check_list_10:checked + .check_list_label .card_menu {
-        width: calc(100% - 56px); 
+    #check_list_10:checked ~ #containner_10 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    #check_list_10:checked + .check_list_label .check_list_box {
-         left: calc(100% - 56px);
+    #check_list_10:checked ~ #check_10 {
+         width: 56px;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
+
 
 
     .menu {
