@@ -42,6 +42,8 @@ button:hover {
     }
 
     input {
+        font-size: 16px;
+        font-weight: 500;
         width: 109px;
         border: none;
         background-color: transparent;
@@ -62,6 +64,11 @@ nav {
     padding-left: $space_side_pages;
     padding-right: $space_side_pages;
     background-color: $secondary_background;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
 }
 
 // partie explication fonctionement du site 
@@ -71,6 +78,8 @@ nav {
     flex-direction: column;
 
     h2 {
+        font-weight: 700;
+        font-size: 24px;
         margin-left: $space_side_pages;
     }
 
@@ -131,6 +140,7 @@ nav {
                 }
 
                 figcaption {
+                    font-weight: 500;
                     font-size: 16px;
                     font-family: "Roboto", sans-serif;
                 }
@@ -150,11 +160,13 @@ nav {
         background-color: $secondary_background;
 
         h2 {
+            font-weight: 700;
             font-size: 40px;
             margin-block-start: 3%;
         }
 
         .p_info {
+            font-weight: 300;
             color: $primary_text_color;
             font-size: 18px;
             margin-block-start: 9px;

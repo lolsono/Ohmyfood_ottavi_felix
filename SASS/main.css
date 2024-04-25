@@ -248,6 +248,8 @@ button:hover {
   margin-block-end: 8%;
 }
 .section_info input {
+  font-size: 16px;
+  font-weight: 500;
   width: 109px;
   border: none;
   background-color: transparent;
@@ -266,12 +268,18 @@ nav {
   padding-right: 25px;
   background-color: #F6F6F6;
 }
+.section_cards h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
 
 .section_fonctionnement {
   display: flex;
   flex-direction: column;
 }
 .section_fonctionnement h2 {
+  font-weight: 700;
+  font-size: 24px;
   margin-left: 25px;
 }
 .section_fonctionnement ol {
@@ -323,6 +331,7 @@ nav {
   color: #353535;
 }
 .section_fonctionnement ol li figure figcaption {
+  font-weight: 500;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
@@ -334,10 +343,12 @@ nav {
     background-color: #F6F6F6;
   }
   .section_info h2 {
+    font-weight: 700;
     font-size: 40px;
     margin-block-start: 3%;
   }
   .section_info .p_info {
+    font-weight: 300;
     color: #353535;
     font-size: 18px;
     margin-block-start: 9px;
@@ -611,7 +622,8 @@ footer ul .footer_title {
   margin-bottom: 20px;
 }
 footer ul h2 {
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   color: white;
   font-family: "Shrikhand", serif;
   margin-block-end: 0px;
@@ -621,6 +633,9 @@ footer ul li {
   list-style-type: none;
 }
 footer ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   padding-top: 10px;
   align-items: center;
   text-decoration: none;
@@ -725,10 +740,12 @@ article .a_cards .div_text {
 article .a_cards .div_text .cards_name {
   margin: 0px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 article .a_cards .div_text p {
+  font-size: 17px;
+  font-weight: 300;
   color: black;
   font-weight: lighter;
   margin-block-start: 0px;
@@ -797,6 +814,8 @@ article #heart-checkbox-4:checked + .heart-icon .full_heart {
   padding-right: 15px;
 }
 .cards_new .div_news p {
+  font-size: 14px;
+  font-weight: 500;
   border-radius: 3px;
   color: #008766;
   text-align: center;

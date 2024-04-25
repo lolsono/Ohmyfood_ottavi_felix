@@ -53,11 +53,13 @@ article {
             .cards_name {
                 margin: 0px;
                 font-size: 18px;
-                font-weight: bold;
+                font-weight: 700;
                 margin-bottom: 8px;
             }
         
             p {
+                font-size: 17px;
+                font-weight: 300;
                 color: $secondary_text_color;
                 font-weight: lighter;
                 margin-block-start: 0px;
@@ -151,6 +153,8 @@ article {
         padding-right: 15px;
             
         p {
+            font-size: 14px;
+            font-weight: 500;
             border-radius: 3px;
             color: $dark_green;
             text-align: center;

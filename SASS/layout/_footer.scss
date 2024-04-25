@@ -15,7 +15,8 @@ footer {
         }
 
         h2 {
-            font-size: 20px;
+            font-weight: 500;
+            font-size: 18px;
             color: $white;
             font-family: "Shrikhand", serif;
             margin-block-end: 00px;
@@ -26,6 +27,9 @@ footer {
             list-style-type: none;
     
             a {
+                font-family: "Roboto", sans-serif;
+                font-size: 16px;
+                font-weight: 500;
                 padding-top: 10px;
                 align-items: center;
                 text-decoration: none;
