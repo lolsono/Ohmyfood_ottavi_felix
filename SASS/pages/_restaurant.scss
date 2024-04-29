@@ -107,7 +107,7 @@
                 overflow: hidden;
                 width: 100%;
                 position: relative;
-                transition: width 0.3ms;
+                transition: 400ms;
             
                 .card_menu_titre {
                     font-size: 18px;
@@ -186,7 +186,7 @@
                 width: 0px;
 
                 //gestion temp transition
-                transition: left 400ms;
+                transition: width 400ms;
 
                 //box commun avec cards_menu
                 @include card_menu_box;
