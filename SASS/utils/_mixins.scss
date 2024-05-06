@@ -11,7 +11,7 @@
 //partie gestion temp transition
 @mixin transition-heart {
     position: absolute;
-    top: 0;
+    top: -10;
     left: 0;
     transition: opacity 0.3s ease-in-out;
 }

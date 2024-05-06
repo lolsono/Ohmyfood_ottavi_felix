@@ -417,7 +417,7 @@ nav {
 }
 .main_menu div .void_heart {
   position: absolute;
-  top: 0;
+  top: -10;
   left: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
@@ -425,7 +425,7 @@ nav {
 }
 .main_menu div .full_heart {
   position: absolute;
-  top: 0;
+  top: -10;
   left: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
@@ -472,7 +472,7 @@ nav {
   overflow: hidden;
   width: 100%;
   position: relative;
-  transition: width 0.3ms;
+  transition: 400ms;
 }
 .main_menu .menu article .card_menu .card_menu_titre {
   font-size: 18px;
@@ -525,7 +525,7 @@ nav {
 }
 .main_menu .menu article .check_list_box {
   width: 0px;
-  transition: left 400ms;
+  transition: width 400ms;
   height: 72px;
   display: flex;
   flex-direction: column;
@@ -741,13 +741,11 @@ article .a_cards .div_text .cards_name {
   margin: 0px;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 8px;
 }
 article .a_cards .div_text p {
   font-size: 17px;
   font-weight: 300;
   color: black;
-  font-weight: lighter;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
@@ -767,7 +765,7 @@ article .heart-icon {
 }
 article .void_heart {
   position: absolute;
-  top: 0;
+  top: -10;
   left: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
@@ -775,7 +773,7 @@ article .void_heart {
 }
 article .full_heart {
   position: absolute;
-  top: 0;
+  top: -10;
   left: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
