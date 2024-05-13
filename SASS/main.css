@@ -331,6 +331,8 @@ nav {
   color: #353535;
 }
 .section_fonctionnement ol li figure figcaption {
+  width: 61%;
+  max-width: 187px;
   font-weight: 500;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -753,8 +755,7 @@ article .heart {
   grid-area: 2/2/3/3;
   align-self: center;
   justify-self: flex-end;
-  padding-right: 42%;
-  bottom: 10px;
+  padding-right: 36px;
 }
 article .hidden-checkbox {
   display: none;
