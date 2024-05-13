@@ -8,7 +8,7 @@
     }
 
     #check_list_1:checked ~ #check_1 {
-         width: 56px;
+         @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -20,7 +20,7 @@
     }
 
     #check_list_2:checked ~ #check_2 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -33,7 +33,7 @@
     }
 
     #check_list_3:checked ~ #check_3 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -46,7 +46,7 @@
     }
 
     #check_list_4:checked ~ #check_4 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -59,7 +59,7 @@
     }
 
     #check_list_5:checked ~ #check_5 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -72,7 +72,7 @@
     }
 
     #check_list_6:checked ~ #check_6 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -85,7 +85,7 @@
     }
 
     #check_list_7:checked ~ #check_7 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -98,7 +98,7 @@
     }
 
     #check_list_8:checked ~ #check_8 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -111,7 +111,7 @@
     }
 
     #check_list_9:checked ~ #check_9 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 
@@ -124,7 +124,7 @@
     }
 
     #check_list_10:checked ~ #check_10 {
-         width: 56px;
+        @include checkmark_size;
          box-shadow: 0px 3px 6px 0.4px #CCCCCC;
     }
 

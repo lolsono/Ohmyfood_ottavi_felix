@@ -5,7 +5,7 @@
 }
 
 #check_list_1:checked ~ #check_1 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -15,7 +15,7 @@
 }
 
 #check_list_2:checked ~ #check_2 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -25,7 +25,7 @@
 }
 
 #check_list_3:checked ~ #check_3 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -35,7 +35,7 @@
 }
 
 #check_list_4:checked ~ #check_4 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -45,7 +45,7 @@
 }
 
 #check_list_5:checked ~ #check_5 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -55,7 +55,7 @@
 }
 
 #check_list_6:checked ~ #check_6 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -65,7 +65,7 @@
 }
 
 #check_list_7:checked ~ #check_7 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -75,7 +75,7 @@
 }
 
 #check_list_8:checked ~ #check_8 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -85,7 +85,7 @@
 }
 
 #check_list_9:checked ~ #check_9 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -95,7 +95,7 @@
 }
 
 #check_list_10:checked ~ #check_10 {
-  width: 56px;
+  width: 77px;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
 }
 
@@ -236,6 +236,7 @@ button:hover {
 }
 .section_info i {
   padding-right: 2%;
+  color: #353535;
 }
 .section_info h2 {
   padding: 0px 70px 0px 70px;
@@ -248,6 +249,8 @@ button:hover {
   margin-block-end: 8%;
 }
 .section_info input {
+  font-family: "Roboto", sans-serif;
+  color: #353535;
   font-size: 16px;
   font-weight: 500;
   width: 109px;
@@ -419,7 +422,6 @@ nav {
 }
 .main_menu div .void_heart {
   position: absolute;
-  top: -10;
   left: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
@@ -427,7 +429,6 @@ nav {
 }
 .main_menu div .full_heart {
   position: absolute;
-  top: -10;
   left: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
@@ -475,6 +476,7 @@ nav {
   width: 100%;
   position: relative;
   transition: 400ms;
+  padding-right: 38px;
 }
 .main_menu .menu article .card_menu .card_menu_titre {
   font-size: 18px;
@@ -507,7 +509,7 @@ nav {
   font-weight: 700;
   width: 32px;
   color: #353535;
-  bottom: 45%;
+  bottom: 30%;
   right: 2%;
   margin: 0px;
   position: absolute;
@@ -684,11 +686,13 @@ footer ul li a i {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   box-shadow: 0px 3px 6px 0.4px #CCCCCC;
+  transition: background-color 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
 }
 
 .button_purpel:hover {
-  opacity: 0.8;
-  box-shadow: 0px 3px 2px 0.4px #CCCCCC;
+  background: linear-gradient(#fface8, #ae80e5);
+  opacity: 0.9;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .button_purpel--center {
@@ -706,8 +710,8 @@ article .lien_cards {
   position: absolute;
   display: block;
   background-color: transparent;
-  width: 90%;
-  height: 25%;
+  width: 92%;
+  height: 27%;
 }
 article .a_cards {
   display: block;
@@ -766,7 +770,6 @@ article .heart-icon {
 }
 article .void_heart {
   position: absolute;
-  top: -10;
   left: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
@@ -774,7 +777,6 @@ article .void_heart {
 }
 article .full_heart {
   position: absolute;
-  top: -10;
   left: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
@@ -845,6 +847,13 @@ article #heart-checkbox-4:checked + .heart-icon .full_heart {
   }
   .section_cards .organiz_cards_reponsive article {
     width: 48%;
+  }
+  .section_cards .organiz_cards_reponsive article .lien_cards {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    width: 39%;
+    height: 27%;
   }
 }
 body .loader {

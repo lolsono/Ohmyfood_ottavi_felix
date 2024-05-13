@@ -108,6 +108,7 @@
                 width: 100%;
                 position: relative;
                 transition: 400ms;
+                padding-right: 38px;
             
                 .card_menu_titre {
                     font-size: 18px;
@@ -148,7 +149,7 @@
                     width: 32px;
                     color: $primary_text_color;
 
-                    bottom: 45%;
+                    bottom: 30%;
                     right: 2%;
                     margin: 0px;
                     position: absolute;

@@ -8,16 +8,17 @@
     background: linear-gradient($secondary, $primary);
     color: $white;
     box-shadow: 0px 3px 6px 0.4px $shadow;
+    transition: background-color 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
+
 }
 
 .button_purpel:hover {
-    // rendre plus opact la couleur 
-    opacity: 0.8;
-
-    //ajuster l'ombre du bouton 
-    box-shadow: 0px 3px 2px 0.4px #CCCCCC;
-
+    // Rendre la couleur de fond plus claire
+    background: linear-gradient(lighten($secondary, 10%), lighten($primary, 10%));
+    opacity: 0.9;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .button_purpel--center {
     justify-content: center;

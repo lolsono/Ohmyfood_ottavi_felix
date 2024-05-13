@@ -11,7 +11,6 @@
 //partie gestion temp transition
 @mixin transition-heart {
     position: absolute;
-    top: -10;
     left: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -58,7 +57,8 @@
     justify-content: center;
 }
 
-
-
+@mixin checkmark_size {
+    width: 77px;
+}
 
 
